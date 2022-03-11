@@ -1,11 +1,11 @@
-basic.forever(function () {
+function GG () {
     if (input.buttonIsPressed(Button.AB)) {
         basic.showLeds(`
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
+            # # # # #
+            # . . . .
+            # . # # #
+            # . . . #
+            # # # # #
             `)
     } else if (input.buttonIsPressed(Button.A)) {
         basic.showString("A")
@@ -14,4 +14,7 @@ basic.forever(function () {
         basic.showString("B")
         basic.pause(1000)
     }
+}
+basic.forever(function () {
+    GG()
 })
